@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#pickup-btn").click(function(){
-      $("#pickup-btn").slideUp('1000');
-      $("#pickup").show('1000');
+      $("#pickup-btn").slideUp('1000').hide('1500');
+      $("#pickup-btn").show('1000');
     });
     $("#delivery-btn").click(function(){
       $("#delivery-btn").slideUp('1500');

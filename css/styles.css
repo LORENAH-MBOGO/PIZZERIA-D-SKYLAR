@@ -2,7 +2,10 @@ body {
   font-family: serif;
   color: #000000;
   background-color: black;
-  overflow-wrap: inherit;
+  overflow: inherit;
+  width: fit-content;
+  height: 100%;
+  align-items: center;
 }
 h2, h3 {
   text-align: center;
@@ -116,7 +119,7 @@ h2, h3 {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
-    align-items: left;
+    float: center;;
   }
   
   #order-proceed-btn {
@@ -159,8 +162,8 @@ h2, h3 {
     /*display: none;*/
     margin-top: 30px;
     border-style: solid;
-    border-color: #e00417;
-    background-color: rgb(187, 68, 20);
+    border-color: rgb(133, 70, 70);
+    background-color:rgb(218, 16, 33);
     border-radius: 15%;
     margin-left: 70px;
     margin-right: 70px;

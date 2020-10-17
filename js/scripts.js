@@ -5,7 +5,7 @@ $(document).ready(function(){
     });
     $("#delivery-btn").click(function(){
       $("#delivery-btn").slideUp('1500');
-      $("#delivery-btn").slideDown('1500');
+      $("#delivery-btn").slideDown('1000');
      
     });
   });

@@ -121,6 +121,7 @@ $(document).ready(function(event) {
 
       
     ///Checkout Btn
+    
       $("#checkout-btn").click(function(Pizzeria) {
         location.reload();
          

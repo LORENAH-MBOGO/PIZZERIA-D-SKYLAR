@@ -7,7 +7,7 @@
 
 
 ## Setup instructions
-*  No Setup is necessarily required but you are required to have a internet browser in order to view the website.  [Online repo (ttps://github.com/LORENAH-MBOGO/PIZZERIA-D-SKYLAR)]
+*  No Setup is necessarily required but you are required to have a internet browser in order to view the website.  [Online repo (https://github.com/LORENAH-MBOGO/PIZZERIA-D-SKYLAR)]
 * Click on the green button to clone or download
 
 

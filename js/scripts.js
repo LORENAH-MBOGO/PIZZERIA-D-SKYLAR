@@ -1,8 +1,21 @@
+$(document).ready(function(){
+    $("#pickup-btn").click(function(){
+      $("#pickup-btn").slideUp('1000');
+      $("#pickup").show('1000');
+    });
+    $("#delivery-btn").click(function(){
+      $("#delivery-btn").slideUp('1500');
+      $("#delivery-btn").slideDown('1500');
+     
+    });
+  });
+  
+
 // Business Logic
 var totalPriceArray = []; //Only global variable in code
 function Order (customSize, cheese) {
   this.customSize = customSize;
-  this.sauce = 100;
+  this.crust = 100;
   this.cheese = cheese;
   this.veggie1 = 100;
   this.veggie2 = 100;
@@ -25,7 +38,7 @@ Order.prototype.pizzaCost = function () {
   } else if (this.cheese === "extra cheese") {
     this.pizzaPrice += 150;
   }
-  this.pizzaPrice += this.sauce;
+  this.pizzaPrice += this.crust;
   this.pizzaPrice += this.veggie1;
   this.pizzaPrice += this.veggie2;
   this.pizzaPrice += this.meat;
@@ -46,7 +59,7 @@ function Address (streetAddress, houseNumber, estate) {
   this.estate = estate;
   this.houseNumber = houseNumber;
   
-  this.deliveryAddress = (streetAddress + "  " + estate + ", " + houseNumber);
+  this.deliveryAddress = (streetAddress +  "  " +  estate +  " " + houseNumber);
 }
 
 //User Interface Logic
@@ -122,10 +135,10 @@ $(document).ready(function(event) {
       
     ///Checkout Btn
     
-      $("#checkout-btn").click(function(Pizzeria) {
+      $("#checkout-btn").click(function() {
         location.reload();
-         
-        alert('Dear customer, ' + ' We have received your order successfully! ');
+        var client = document.getElementById('address').value;
+        alert('Dear customer, ' + ' We have received your order successfully!');
         Bryson.preventDefault();
       });
     });

@@ -96,3 +96,37 @@
       <button type="btn" class="btn btn-danger" id="delivery-btn">Delivery</button>
       <div class="form-group" id="address">
         <h3>Delivery Address</h3>
+        
+        <!-- Address Form Start -->
+        <form id="address-form">
+            <div class="row">
+              <div class="col-xs-6">
+                <label for="first-name">First Name</label><input required type="text" class="form-control address-spacing">
+              </div>
+              <div class="col-xs-6">
+                <label for="last-name">Last Name</label><input required type="text" class="form-control address-spacing">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                <label for="street-address">Address</label><input required type="text" class="form-control" id="street-add">
+              </div>
+              <div class="col-xs-3">
+                <label for="house-number">House Number</label><input required type="text" class="form-control" id="house-add">
+              </div>
+              <div class="col-xs-1">
+                <label for="estate-name">Estate</label>
+                <select required class="form-control delivery-address" id="estate-select">
+                  <option></option>
+                  <option>Landless</option>
+                  <option>Makongeni</option>
+                  <option>Juja</option>
+                </select>
+              </div>
+             </div>
+            
+             <button type="submit" class="btn btn-primary" id="order-proceed-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+  <!-- Landing End -->

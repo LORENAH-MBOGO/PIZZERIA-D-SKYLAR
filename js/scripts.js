@@ -64,9 +64,8 @@ $(document).ready(function(event) {
       $("form#address-form").submit(function(event) {
         event.preventDefault();
         var streetAddress = $("input#street-add").val();
-        var city = $("input#city-add").val();
-        var state = $("select#state-select").val();
-        var zipcode = $("input#zip-add").val();
+        var houseNumber = $("input#house-add").val();
+        var estate = $("select#estate-select").val();
         var newAddress = new Address(streetAddress, estate, houseNumber)
         $("#order-content").show();
         $("#landing-content").hide();
@@ -75,19 +74,19 @@ $(document).ready(function(event) {
       $("form#custom-pizza").submit(function(event) {
         event.preventDefault();
         var customSize = $("select#size").val();
-        var sauce = $("select#sauce").val();
+        var crust = $("select#crust").val();
         var cheese = $("select#cheese").val();
         var veggie1 = $("select#veggie1").val();
         var veggie2 = $("select#veggie2").val();
         var meat = $("select#meat").val();
-        var pizzaDetails = (customSize + " - " + sauce + ", " + cheese + ", " + veggie1 + ", " + veggie2 + ", " + meat);
+        var pizzaDetails = (customSize + " - " + crust + ", " + cheese + ", " + veggie1 + ", " + veggie2 + ", " + meat);
         var newPizzaOrder = new Order(customSize, cheese);
         newPizzaOrder.pizzaCost();
         totalPriceArray.push(newPizzaOrder.pizzaPrice);
         $("#pizza-details-dropdown").show();
         $("#final-cost").text(newPizzaOrder.finalCost());
         $("#pizza-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
-        $("#size, #sauce, #cheese, #veggie1, #veggie2, #meat").val("");
+        $("#size, #crust, #cheese, #veggie1, #veggie2, #meat").val("");
       });
       $("#pizza-details-dropdown").click(function() {
         $("#pizza-details").toggle();
@@ -120,9 +119,13 @@ $(document).ready(function(event) {
         $("#sides-details").toggle();
       });
 
+      
     ///Checkout Btn
-      $("#checkout-btn").click(function() {
+      $("#checkout-btn").click(function(Pizzeria) {
         location.reload();
+         
+        alert('Dear customer, ' + ' We have received your order successfully! ');
+        Bryson.preventDefault();
       });
     });
     

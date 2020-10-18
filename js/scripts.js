@@ -132,14 +132,17 @@ $(document).ready(function(event) {
         $("#sides-details").toggle();
       });
 
-      
-    ///Checkout Btn
+      ///Checkout Btn
     
       $("#checkout-btn").click(function() {
         location.reload();
-        var client = document.getElementById('address').value;
+        var pizza = document.getElementById("order-details").innerHTML.value;
         alert('Dear customer, ' + ' We have received your order successfully!');
         Bryson.preventDefault();
+
       });
     });
+
+      
+    
     

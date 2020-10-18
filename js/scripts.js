@@ -132,6 +132,8 @@ $(document).ready(function(event) {
         $("#sides-details").toggle();
       });
 
+    
+
       ///Checkout Btn
     
       $("#checkout-btn").click(function() {
@@ -141,6 +143,7 @@ $(document).ready(function(event) {
         Bryson.preventDefault();
 
       });
+      
     });
 
       

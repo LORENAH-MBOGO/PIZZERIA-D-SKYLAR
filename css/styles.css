@@ -66,8 +66,10 @@ h2, h3 {
   
   #landing-content {
     color: #000000;
-    background-color: #FFFFFF;
     margin-top: 200px;
+    background-image: url(https://cutewallpaper.org/21/brown-color-wallpapers/brown-plain-background-Magdalene-project.org.jpg);
+    background-size: contain;
+
     text-align: center;
   }
   
@@ -116,9 +118,9 @@ h2, h3 {
   }
   
   #pickup-btn, #delivery-btn {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
     float: center;;
   }
   

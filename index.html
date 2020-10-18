@@ -10,15 +10,18 @@
     <title>SKYLAR'S PIZZERIA</title>
   </head>
   <body>
-
+   
     <h3><a href="index.html"><div class="navbar-text pull-left"><a target="_top" href="https://flamingtext.com/" ><img src="https://blog.flamingtext.com/blog/2020/10/17/flamingtext_com_1602925979_825463337.png" border="0" alt="Logo Design by FlamingText.com" title="Logo Design by FlamingText.com"></a></h3></div></a>
-
     <h3 id="landing-tagline"><b>Remote Pizza Delivery is our super-power!!! (online order only).</h3>
-      <h3><i>*Delivery only available in Thika</b></i></h3>
-</div>
-<br>
+    <h3><i>*Delivery only available in Thika</b></i></h3>
 
-    <div class="container">
+    <button type="btn" class="btn btn-primary"  id="pickup-btn">Pickup</button>
+    <button type="btn" class="btn btn-danger" id="delivery-btn">Delivery</button>
+
+
+  <div class="jumbotron" id="landing-content">  
+    
+        <div class="container">
         <div id="pizzaa">
         <div class="pizza1">
         <img src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="69%" alt="cheese">
@@ -80,8 +83,8 @@
 		</div>
   </div>
 
-  <button type="btn" class="btn btn-primary"  id="pickup-btn">Pickup</button>
-<button type="btn" class="btn btn-danger" id="delivery-btn">Delivery</button>
+  
+
 <!-- Landing End -->
 
 <div class="form-group"  id="address">
@@ -159,7 +162,7 @@
 
         <form class="form-group" id="custom-pizza">
           <div id="form-content">
-            <h3 id="form-header">Custom Pizza Form</h3>
+            <h3 id="form-header">My Custom Pizza</h3>
             <div class="row container">
               <div class="col-xs-6"><p><a target="_top" href="https://flamingtext.com/" ><img src="https://blog.flamingtext.com/blog/2020/10/17/flamingtext_com_1602950904_825463379.png" border="0" alt="Logo Design by FlamingText.com" title="Logo Design by FlamingText.com"></a></p></div>
               <div class="col-xs-6" class="form-option">
@@ -196,7 +199,7 @@
               </div>
             </div>
             <div class="row container">
-              <div class="col-xs-6"><p><a target="_top" href="https://flamingtext.com/" ><img src="https://blog.flamingtext.com/blog/2020/10/17/flamingtext_com_1602951066_825463382.png" border="0" alt="Logo Design by FlamingText.com" title="Logo Design by FlamingText.com"></a> 1 (+KES)</p></div>
+              <div class="col-xs-6"><p><a target="_top" href="https://flamingtext.com/" ><img src="https://blog.flamingtext.com/blog/2020/10/17/flamingtext_com_1602951199_825463384.png" border="0" alt="Logo Design by FlamingText.com" title="Logo Design by FlamingText.com"></a>(+KES)</p>
               <div class="col-xs-6" class="form-option">
                 <select required class="form-control" id="veggie1">
                   <option></option>
@@ -209,9 +212,9 @@
               </div>
             </div>
             <div class="row container">
-              <div class="col-xs-6"><p><a target="_top" href="https://flamingtext.com/" ><img src="https://blog.flamingtext.com/blog/2020/10/17/flamingtext_com_1602951199_825463384.png" border="0" alt="Logo Design by FlamingText.com" title="Logo Design by FlamingText.com"></a>(+KES100)</p></div>
-              <div class="col-xs-6" class="form-option">
-                <select required class="form-control" id="veggie2">
+              <div class="col-xs-6"><p><a target="_top" href="https://flamingtext.com/" ><img src="https://blog.flamingtext.com/blog/2020/10/18/flamingtext_com_1603023248_825463484.png" border="0" alt="Logo Design by FlamingText.com" title="Logo Design by FlamingText.com"></a>(+KES200)</p>
+                <div class="col-xs-6" class="form-option">
+              <select required class="form-control" id="veggie2">
                   <option></option>
                   <option value="onions">Onions</option>
                   <option value="green peppers">Green Peppers</option>
@@ -258,7 +261,10 @@
       <p><a id="sides-dropdown">Sides</a></p>
       <ul id="sides-details"></ul>
     </div>
-    <button type="btn" class="btn btn-danger" id="checkout-btn">Checkout</button>
+
+    <button type="btn" class="btn btn-success" id="checkout-btn">Checkout</button>
+   
+  </div>
     <h3><span id="delivery-option"></span></h3>
   </div>
 <!-- Cart End -->
